@@ -1,45 +1,29 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Solitaire</title>
-  <link href="./index.scss" rel="stylesheet">
-  <link rel="shortcut icon" href="./Images/Icon.png">
-  <link rel="apple-touch-icon" href="/Images/Icon-Solid.png">
-  <script type="module" src="./index.ts"></script>
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no, shrink-to-fit=no">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solitaire</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Adjust to match your CSS file name -->
 </head>
-
 <body>
-  <div id="tableHolder">
-  </div>
-  <div id="buttons">
+    <div id="tableHolder"></div>
     <button id="newGameButton">New Game</button>
     <button id="undoButton">Undo</button>
     <button id="redoButton">Redo</button>
-  </div>
+    <div class="gameScore"></div>
+
+    <!-- Templates required by the game -->
+    <template id="rootViewTemplate">
+        <div class="rootView"></div>
+    </template>
+    <template id="cardViewTemplate">
+        <div class="card"></div>
+    </template>
+    <template id="pileViewTemplate">
+        <div class="pile"></div>
+    </template>
+
+    <script src="index.793843ee.js"></script>
 </body>
-
-<template id="rootViewTemplate">
-  <div class="cardTable">
-    <span class="gameScore">12 / 100</span>
-  </div>
-</template>
-
-<template id="cardViewTemplate">
-  <div class="card">
-    <div class="cardRotation">
-      <div class="cardFront"></div>
-      <div class="cardBack"></div>
-    </div>
-  </div>
-</template>
-
-<template id="pileViewTemplate">
-  <div class="pile">
-  </div>
-</template>
-
 </html>

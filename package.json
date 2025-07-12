@@ -21,6 +21,7 @@
         "tswatch": "tsc --watch --noEmit --project tsconfig.json",
         "lint": "eslint --ext .ts .",
         "lintfix": "eslint --ext .ts . --fix"
+        "build": "open-next build"
     },
     "keywords": [],
     "author": "",
